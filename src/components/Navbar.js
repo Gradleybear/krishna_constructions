@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
+
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
@@ -29,8 +30,9 @@ function Navbar() {
       <nav className='navbar'>
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            TRVL
-            <i class='fab fa-typo3' />
+        Krishna Constructions
+        {/* <img src = "images/krishna logo.jpg"/> */}
+            <i src = "images/krishna logo.jpg" class='fab fa-typo3' />
           </Link>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
@@ -51,13 +53,13 @@ function Navbar() {
               </Link>
             </li>
             <li className='nav-item'>
-              <Link
+              {/* <Link
                 to='/products'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
                 Products
-              </Link>
+              </Link> */}
             </li>
 
             <li>
